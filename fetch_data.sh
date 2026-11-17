@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 # Refreshes data/contributions.json and data/repos.jsonl. Needs the gh CLI (GH_TOKEN in Actions).
-# The repos listed here are the ones that get a card, in this order.
+# Featured repos are picked automatically: the 3 most recently pushed public repos that have a
+# description, skipping forks, archived repos and the profile repo itself. Change FEATURED to show more.
 set -euo pipefail
 cd "$(dirname "$0")"
 LOGIN="${LOGIN:-ThatPandaBean}"
-REPOS="concord workout"
+FEATURED=3
 
 gh api graphql -F login="$LOGIN" -f query='
 query($login: String!) { user(login: $login) { contributionsCollection { contributionCalendar {
@@ -12,6 +13,10 @@ query($login: String!) { user(login: $login) { contributionsCollection { contrib
   --jq '{total: .data.user.contributionsCollection.contributionCalendar.totalContributions,
          days: [.data.user.contributionsCollection.contributionCalendar.weeks[].contributionDays[]
                 | {date, count: .contributionCount}]}' > data/contributions.json
+
+REPOS=$(gh repo list "$LOGIN" --visibility public --source --no-archived --limit 100 \
+  --json name,description,pushedAt \
+  --jq "[.[] | select(.description != \"\" and .name != \"$LOGIN\")] | sort_by(.pushedAt) | reverse | .[:$FEATURED][].name")
 
 {
   gh api "users/$LOGIN" --jq '{public_repos}'
