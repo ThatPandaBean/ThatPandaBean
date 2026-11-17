@@ -1,0 +1,25 @@
+<p align="center">
+  <img src="cards/hero.svg" width="100%" alt="ThatPandaBean. Economics student with a data science minor, and a past dabbler in psychology. I build small web projects.">
+</p>
+
+<p align="center">
+  <a href="https://thatpandabean.github.io/concord/"><img src="cards/tile-1.svg" width="32.5%" alt="Concord, live demo"></a>
+  <a href="https://github.com/ThatPandaBean/workout"><img src="cards/tile-2.svg" width="32.5%" alt="Workout app"></a>
+  <a href="https://github.com/ThatPandaBean?tab=repositories"><img src="cards/tile-3.svg" width="32.5%" alt="All repositories"></a>
+</p>
+
+<p align="center">
+  <img src="cards/activity.svg" width="100%" alt="Contributions per month, with current streak, active days and busiest day">
+</p>
+
+<p align="center">
+  <a href="https://github.com/ThatPandaBean/concord"><img src="cards/repo-concord.svg" width="100%" alt="concord repository"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ThatPandaBean/workout"><img src="cards/repo-workout.svg" width="100%" alt="workout repository"></a>
+</p>
+
+<p align="center">
+  <img src="cards/graph.svg" width="100%" alt="Contribution graph for the last year">
+</p>
