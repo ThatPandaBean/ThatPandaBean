@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ThatPandaBean/cursor-swarm"><img src="cards/tile-1.svg" width="32.5%" alt="cursor-swarm"></a>
-  <a href="https://thatpandabean.github.io/concord/"><img src="cards/tile-2.svg" width="32.5%" alt="concord"></a>
+  <a href="https://github.com/ThatPandaBean/workout"><img src="cards/tile-1.svg" width="32.5%" alt="workout"></a>
+  <a href="https://github.com/ThatPandaBean/cursor-swarm"><img src="cards/tile-2.svg" width="32.5%" alt="cursor-swarm"></a>
   <a href="https://github.com/ThatPandaBean?tab=repositories"><img src="cards/tile-3.svg" width="32.5%" alt="All repositories"></a>
 </p>
 
@@ -15,15 +15,15 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/ThatPandaBean/workout"><img src="cards/repo-workout.svg" width="100%" alt="workout repository"></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/ThatPandaBean/cursor-swarm"><img src="cards/repo-cursor-swarm.svg" width="100%" alt="cursor-swarm repository"></a>
 </p>
 
 <p align="center">
   <a href="https://github.com/ThatPandaBean/concord"><img src="cards/repo-concord.svg" width="100%" alt="concord repository"></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ThatPandaBean/workout"><img src="cards/repo-workout.svg" width="100%" alt="workout repository"></a>
 </p>
 
 <p align="center">
